@@ -1,3 +1,4 @@
+/* Général */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #333333;
 }
 
+/* Header */
 header {
   text-align: center;
   background: linear-gradient(135deg, #f9c5d1, #c8b6ff);
@@ -21,46 +23,29 @@ header {
 .slogan {
   font-style: italic;
   color: #444;
+  font-size: 16px;
 }
 
 /* Section produits */
 .produits {
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .carte-produit {
-    width: 90%;
-  }
-}
-
 .produits h2 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #444;
 }
-.btn {
-  box-shadow: 0 4px 12px rgba(200, 182, 255, 0.4);
-}
-
-.btn:hover {
-  background-color: #a593e0;
-  transform: scale(1.05);
-}
-
 
 .produits-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-}
-.carte-produit:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  gap: 25px;
 }
 
-
+/* Carte produit */
 .carte-produit {
   background: #ffffff;
   border: 1px solid #f0f0f0;
@@ -68,11 +53,29 @@ header {
   padding: 20px;
   width: 250px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-produit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .carte-produit img {
   max-width: 100%;
   border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.carte-produit h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.carte-produit p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #777;
 }
 
 /* Bouton */
@@ -84,17 +87,46 @@ header {
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(200, 182, 255, 0.4);
 }
 
 .btn:hover {
   background-color: #a593e0;
+  transform: scale(1.05);
 }
 
-/* Pied de page */
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #f9c5d1;
   font-size: 14px;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .carte-produit {
+    width: 90%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .produits h2 {
+    font-size: 24px;
+  }
 }
