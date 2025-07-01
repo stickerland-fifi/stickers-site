@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffdf7;
+  color: #333333;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #f9c5d1, #c8b6ff);
+  padding: 40px 20px;
+  color: #333;
+}
+
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-style: italic;
+  color: #444;
+}
+
+.produits {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.carte-produit {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.carte-produit img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #c8b6ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #a593e0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9c5d1;
+  font-size: 14px;
+}
