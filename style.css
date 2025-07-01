@@ -38,6 +38,15 @@ header {
 .produits h2 {
   margin-bottom: 30px;
 }
+.btn {
+  box-shadow: 0 4px 12px rgba(200, 182, 255, 0.4);
+}
+
+.btn:hover {
+  background-color: #a593e0;
+  transform: scale(1.05);
+}
+
 
 .produits-container {
   display: flex;
