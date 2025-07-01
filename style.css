@@ -23,25 +23,7 @@ header {
   color: #444;
 }
 
-.produits {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.carte-produit {
-  background: #ffffff;
-  border: 1px solid #f0f0f0;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.carte-produit img {
-  max-width: 100%;
-  border-radius: 12px;
-}
+/* Section produits */
 .produits {
   padding: 40px 20px;
   text-align: center;
@@ -64,7 +46,7 @@ header {
   border-radius: 20px;
   padding: 20px;
   width: 250px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .carte-produit img {
@@ -72,6 +54,7 @@ header {
   border-radius: 12px;
 }
 
+/* Bouton */
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -87,22 +70,7 @@ header {
   background-color: #a593e0;
 }
 
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #c8b6ff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #a593e0;
-}
-
+/* Pied de page */
 footer {
   text-align: center;
   padding: 20px;
