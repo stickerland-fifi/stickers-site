@@ -29,6 +29,12 @@ header {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .carte-produit {
+    width: 90%;
+  }
+}
+
 .produits h2 {
   margin-bottom: 30px;
 }
