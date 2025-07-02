@@ -10,44 +10,49 @@
   <header>
     <img src="logo.png" alt="Logo Stickerland by Fifi" class="logo">
     <h1>Stickerland by Fifi</h1>
-    <p class="slogan">stick it your way for unique personalized  stickers</p>
+    <p class="slogan">stick it your way for unique personalized stickers</p>
   </header>
 
-<section class="produits">
-  <h2>Nos créations</h2>
-  <div class="produits-container">
-    <div class="carte-produit">
-      <img src="cat.jpg" alt="Stickers">
-      <h3>Sticker Personnalisé</h3>
-      <p>À partir de 1 DT</p>
-      <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
+  <section class="produits">
+    <h2>Nos créations</h2>
+    <div class="produits-container">
+      <div class="carte-produit">
+        <img src="cat.jpg" alt="Stickers">
+        <h3>Sticker Personnalisé</h3>
+        <p>À partir de 1 DT</p>
+        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
+      </div>
+      <div class="carte-produit">
+        <img src="angry.jpg" alt="Stickers">
+        <h3>Sticker Personnalisé</h3>
+        <p>À partir de 1 DT</p>
+        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
+      </div>
+      <div class="carte-produit">
+        <img src="coffee.jpg" alt="Stickers">
+        <h3>Sticker Personnalisé</h3>
+        <p>À partir de 1 DT</p>
+        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
+      </div>
     </div>
-    <div class="carte-produit">
-      <img src="angry.jpg" alt="Stickers">
-      <h3>Sticker Personnalisé</h3>
-      <p>À partir de 1 DT</p>
-      <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
-    </div>
-    <div class="carte-produit">
-      <img src="coffee.jpg" alt="Stickers">
-      <h3>Sticker Personnalisé</h3>
-      <p>À partir de 1 DT</p>
-      <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
-    </div>
-     <div id="cartes" class="produits-container" style="display: none;">
-    <div class="carte-produit">
-      <img src="vueface.jpg" alt="Carte de visite">
-      <h3>Carte Élégante</h3>
-      <p>Personnalisée — 50 DT</p>
-      <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander</a>
-    </div>
-    <!-- Autres cartes -->
-  </div>
-</section>
-    <!-- Tu peux en ajouter autant que tu veux ici -->
-  </div>
-</section>
 
+    <!-- 🔘 Bouton pour afficher les cartes -->
+    <div style="text-align:center; margin: 30px;">
+      <button onclick="afficherCartes()">Voir les cartes de visite</button>
+    </div>
+
+    <!-- 🧾 Cartes de visite (cachées au départ) -->
+    <div id="cartes" class="produits-container" style="display: none;">
+      <h2>Cartes de visite</h2>
+      <div class="carte-produit">
+        <img src="vueface.jpg" alt="Carte de visite">
+        <h3>Carte Élégante</h3>
+        <p>Personnalisée — 50 DT</p>
+        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander</a>
+      </div>
+      <!-- Tu peux ajouter d'autres cartes ici -->
+    </div>
+  </section>
 
   <footer>
     <p>Suivez-nous sur 
@@ -56,5 +61,12 @@
     </p>
     <p>© 2025 Stickerland by Fifi</p>
   </footer>
+
+  <!-- ✅ Script JavaScript -->
+  <script>
+    function afficherCartes() {
+      document.getElementById("cartes").style.display = "flex";
+    }
+  </script>
 </body>
 </html>
