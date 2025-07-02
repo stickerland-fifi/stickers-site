@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stickerland by Fifi</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🔝 Barre de navigation simple -->
+  <nav style="text-align: center; padding: 20px;">
+    <button onclick="afficherApropos()" style="margin: 10px; background-color: #a8d5ba; color: black; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">
+      À propos
+    </button>
+    <button onclick="afficherServices()" style="margin: 10px; background-color: #a8d5ba; color: black; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">
+      Nos services
+    </button>
+  </nav>
+
   <header>
-    <img src="logo.png" alt="Logo Stickerland by Fifi" class="logo">
+    <img src="logo.png" alt="Logo Stickerland by Fifi" class="logo" />
     <h1>Stickerland by Fifi</h1>
     <p class="slogan">stick it your way for unique personalized stickers</p>
   </header>
 
-  <section class="produits">
-    <h2>Nos créations</h2>
+  <!-- 🙋‍♀️ Section À propos (cachée au début) -->
+  <section id="apropos" style="display: none; padding: 30px; text-align: center;">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+      Je suis Farah, la créatrice de Stickerland by Fifi. Je suis rapide, perfectionniste et passionnée par la création graphique.
+      J’aime transformer les idées en stickers uniques et cartes élégantes. <br>
+      Avec Stickerland by Fifi, je propose des créations personnalisées avec soin et amour 💚.
+    </p>
+  </section>
+
+  <!-- 🛍️ Section services (stickers + cartes) (cachée au début) -->
+  <section id="services" style="display: none;">
+    <h2 style="text-align:center;">Nos services</h2>
+
+    <!-- Stickers -->
     <div class="produits-container">
       <div class="carte-produit">
-        <img src="cat.jpg" alt="Stickers">
+        <img src="cat.jpg" alt="Stickers" />
         <h3>Sticker Personnalisé</h3>
         <p>À partir de 1 DT</p>
         <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
       </div>
-      <div class="carte-produit">
-        <img src="angry.jpg" alt="Stickers">
-        <h3>Sticker Personnalisé</h3>
-        <p>À partir de 1 DT</p>
-        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
-      </div>
-      <div class="carte-produit">
-        <img src="coffee.jpg" alt="Stickers">
-        <h3>Sticker Personnalisé</h3>
-        <p>À partir de 1 DT</p>
-        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander sur WhatsApp</a>
-      </div>
+      <!-- ... autres stickers -->
     </div>
 
-    <!-- 🔘 Version avec style direct -->
-<div style="text-align:center; margin: 50px;">
-  <button onclick="afficherCartes()" style="background-color:#a8d5ba; color:black; font-size:16px; padding:12px 24px; border:none; border-radius:8px; cursor:pointer;">
-    Voir les cartes de visite
-  </button>
-</div>
-
-
-    <!-- 🧾 Cartes de visite (cachées au départ) -->
-    <div id="cartes" class="produits-container" style="display: none;">
-      <h2>Cartes de visite</h2>
+    <!-- Cartes de visite -->
+    <div class="produits-container">
       <div class="carte-produit">
-        <img src="vueface.jpg" alt="Carte de visite">
-         <img src="vuedos.jpg" alt="Carte de visite">
+        <img src="vueface.jpg" alt="Carte face" />
+        <img src="vuedos.jpg" alt="Carte dos" />
         <h3>Carte Élégante</h3>
         <p>Personnalisée — 50 DT</p>
         <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander</a>
       </div>
-    <div class="carte-produit">
-    <img src="gaz2.jpg" alt="Carte de visite ">
-    <img src="gaz1.jpg" alt="Carte de visite ">
-    <h3>Carte Nature</h3>
-    <p>Personnalisée — 50 DT</p>
-    <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander</a>
-  </div>
+      <div class="carte-produit">
+        <img src="gaz1.jpg" alt="Carte face" />
+        <img src="gaz2.jpg" alt="Carte dos" />
+        <h3>Carte Nature</h3>
+        <p>Personnalisée — 50 DT</p>
+        <a class="btn" href="https://wa.me/21626280391" target="_blank">Commander</a>
+      </div>
     </div>
   </section>
 
@@ -72,10 +75,16 @@
     <p>© 2025 Stickerland by Fifi</p>
   </footer>
 
-  <!-- ✅ Script JavaScript -->
+  <!-- ✅ JavaScript -->
   <script>
-    function afficherCartes() {
-      document.getElementById("cartes").style.display = "flex";
+    function afficherApropos() {
+      document.getElementById("apropos").style.display = "block";
+      document.getElementById("services").style.display = "none";
+    }
+
+    function afficherServices() {
+      document.getElementById("services").style.display = "block";
+      document.getElementById("apropos").style.display = "none";
     }
   </script>
 </body>
